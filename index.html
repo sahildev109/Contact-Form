@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+<body>
+<div class="flx">
+    <div id="success">
+      
+      <div id="inline">  <img src="icon-success-check.svg" alt="">
+        <h3>Message Sent!</h3> </div>
+   
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+  </div>
+</div>
+
+<div class="form">
+    <form action="" id="frm">
+    <h1>Contact Us</h1>
+    <div id="md">
+    <div class="elem elem1" id="fir">
+        <p id="first">First Name *</p>
+        <input type="text" name="" id="first-name">
+        <p class="error" id="er1">This field is required</p>
+    </div>
+
+    <div class="elem elem2">
+        <p id="last">Last Name *</p>
+        <input type="text" name="" id="last-name">
+        <p class="error" id="er2">This field is required</p>
+    </div>
+</div>
+
+    <div class="elem">
+        <p>Email Address *</p>
+        <input type="email" name="" id="e-mail">
+        <p class="error" id="er3">Please enter a valid email address</p>
+    </div>
+
+    <div class="elem">
+        <div class="form-group radio">
+            <label for="query">Query Type <span class="star">*</span></label>
+            <div id="query">
+              <div class="query-type typ1">
+                <input type="radio" id="option1" name="query-type" aria-required="true" />
+                <label for="option1">General Enquiry</label>
+              </div>
+              <div class="query-type typ2">
+                <input type="radio" id="option2" name="query-type" aria-required="true" />
+                <label for="option2">Support Request</label>
+              </div>
+            </div>
+         <p class="error"  id="er4">Please select query type</p>
+    </div>
+
+    <div class="elem">
+        <p>Message *</p>
+        <textarea name="" id="txt" cols="40" rows="20"></textarea>
+    </div>
+    <p class="error" id="er5">This field is required</p>
+
+    <div class="elem">
+      <div id="chk">
+        <input type="checkbox" name="" id="check"> <label for="check">I consent to being contacted by the team</label>
+    </div>
+    </div>
+    <p class="error" id="er6">To submit this form, please consent to begin contacted</p>
+   <div class="btn"> <button type="submit" id="submit">Submit</button></div>
+</div>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
